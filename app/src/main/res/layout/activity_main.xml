@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Kewarganegaraan Indonesia:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:inputType="textCapWords"
+            android:layout_marginTop="6dp" />
+
+        <EditText
+            android:id="@+id/etNIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIK"
+            android:inputType="number"
+            android:maxLength="16"
+            android:layout_marginTop="6dp" />
+
+        <EditText
+            android:id="@+id/etKabupaten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kabupaten"
+            android:inputType="textCapWords"
+            android:layout_marginTop="6dp" />
+
+        <EditText
+            android:id="@+id/etKecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kecamatan"
+            android:inputType="textCapWords"
+            android:layout_marginTop="6dp" />
+
+        <EditText
+            android:id="@+id/etDesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Desa"
+            android:inputType="textCapWords"
+            android:layout_marginTop="6dp" />
+
+        <EditText
+            android:id="@+id/etRT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RT"
+            android:inputType="number"
+            android:layout_marginTop="6dp" />
+
+        <EditText
+            android:id="@+id/etRW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RW"
+            android:inputType="number"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/tvGenderLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin:"
+            android:layout_marginTop="10dp" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <RadioButton
+                android:id="@+id/rbLaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-Laki" />
+
+            <RadioButton
+                android:id="@+id/rbPerempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:layout_marginStart="12dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvStatusLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status Pernikahan :"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:id="@+id/spStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Data"
+            android:backgroundTint="#006400"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Data"
+            android:backgroundTint="#8B0000"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Warga Negara:"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum ada data warga yang tersimpan."
+            android:layout_marginTop="6dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+    </LinearLayout>
+</ScrollView>
